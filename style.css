@@ -1,0 +1,381 @@
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+
+    background:rgb(193, 17, 25);
+    width: 50px;
+}
+
+html::-webkit-scrollbar {
+    width: 15px;
+
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('background-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+   
+}
+
+
+nav img {
+    width: 150px;
+}
+
+.red-btn {
+    background-color: rgb(229, 9, 20);
+    color: antiquewhite;
+    border: 0;
+    border-radius: 0.25rem;
+    padding: 5px 17px;
+    box-sizing: border-box;
+}
+
+.red-btn:hover {
+    background: rgb(193, 17, 25);
+}
+
+
+.hero {
+    height: 100vh; 
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 🌟 Adjust Title & Text */
+.hero-title {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.hero-first-p, 
+.hero-second-p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+
+.form-container {
+    display: flex;
+    gap: 10px;  
+    width: 50%;
+    max-width: 600px;
+}
+
+.form-floating {
+    flex-grow: 1;  
+}
+
+
+#floatinginput {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+
+.get-started-btn {
+    height: 50px;
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    border-radius: 5px;
+    white-space: nowrap; 
+}
+
+
+
+/* purple section */
+.purple-section {
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.purple-section .container-md {
+    background: radial-gradient(51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
+    box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    margin: 0 74px;
+    color: #fff;
+    padding: 22px;
+}
+
+.purple-section img {
+    width: 25%;
+    height: fit-content;
+}
+
+.purple-section p:first-of-type {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0;
+}
+
+.purple-section p:last-of-type {
+
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.purple-section a {
+    color: #448ef4;
+    font-weight: 500;
+
+}
+.purple-section a::after{
+    content:"\276F";
+    margin-left: 10px;
+}
+
+
+.enjoy-section,
+.watch-section,
+.children-section,
+.download-section {
+    background-color: black !important;
+    color: white;
+    border-top: 5px solid #232323;
+    border-bottom: 5px solid #232323;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.section-paragraph {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.faq-section {
+    background-color: black;
+}
+
+.accordion-button {
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-button::after {
+    content: "+";
+    font-size: 1.5rem;
+    color: white;
+    margin-left: auto;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordion-button[aria-expanded="true"]::after {
+    content: "-";
+    transform: rotate(180deg);
+}
+.accordion-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.accordion-button .icon {
+    font-size: 1.5rem;
+    margin-left: auto;
+}
+
+.accordion-button::after {
+    display: none; 
+}
+
+.accordion-button[aria-expanded="true"] .icon {
+    transform: rotate(45deg);}
+
+.newsletter-section {
+    background-color: black;
+    border-top: 5px solid #232323;
+}
+
+.form-control {
+    width: 320px;
+    height: 50px;
+}
+
+.btn-danger {
+    font-size: 1.2rem;
+    height: 50px;
+}
+.footer-section{
+    background-color: black;
+}
+.footer-section a {
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.btn-outline-secondary {
+    border: 1px solid #666;
+    color: #ddd;
+    background: transparent;
+}
+
+.btn-outline-secondary:hover {
+    background: #333;
+}
+@media (max-width: 992px) {
+    .section-title,
+    .section-paragraph {
+        text-align: center !important;
+    }
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+   
+    .hero {
+        height: auto;
+        padding: 50px 20px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-first-p, .hero-second-p {
+        font-size: 1rem;
+    }
+
+    .form-container {
+        flex-direction: column; 
+        width: 90%;
+    }
+
+    .get-started-btn {
+        width: 100%;
+    }
+
+    .purple-section .container-md {
+        margin: 0 20px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .purple-section img {
+        width: 50%;
+    }
+
+    .enjoy-section, 
+    .watch-section, 
+    .children-section, 
+    .download-section {
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-paragraph {
+        font-size: 1rem;
+    }
+
+    .enjoy-section img, 
+    .watch-section img, 
+    .children-section img, 
+    .download-section img {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .faq-section {
+        padding: 40px 20px;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+    }
+
+    .newsletter-section form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .newsletter-section .form-floating {
+        width: 100%;
+    }
+
+    .newsletter-section .btn {
+        width: 100%;
+    }
+
+    .footer-section .row {
+        text-align: center;
+    }
+
+    .footer-section ul {
+        padding: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-section .row {
+        text-align: center; 
+    }
+    .footer-section .col-6 {
+        width: 100%;
+    }
+    .footer-section ul {
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-section .row {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .footer-section .col-md-3 {
+        width: 50%; 
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer-section {
+        text-align: center;
+    }
+    .footer-section .row {
+        justify-content: center;
+    }
+}
